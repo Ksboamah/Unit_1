@@ -20,4 +20,7 @@ turtle.right(135)
 turtle.forward(100)
 turtle.right(135)
 turtle.forward(100)
+turtle.right(135)
+
+
 turtle.exitonclick()

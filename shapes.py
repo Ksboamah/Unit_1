@@ -37,15 +37,27 @@ for x in range(4):
     turtle.left(90)
 
 turtle.penup()
-turtle.forward(200)
+turtle.forward(250)
 
 turtle.pendown()
-turtle.left(70)
+turtle.right(145)
 turtle.forward(100)
-turtle.right(135)
+turtle.right(145)
 turtle.forward(100)
-turtle.right(150)
+turtle.right(145)
+turtle.forward(100)
+turtle.right(145)
+turtle.forward(100)
+turtle.right(145)
 turtle.forward(100)
 
+turtle.penup()
+turtle.goto(300,300)
+turtle.pendown()
+
+turtle.left(135)
+for x in range(4):
+    turtle.left(90)
+    turtle.forward(100)
 
 turtle.exitonclick()
