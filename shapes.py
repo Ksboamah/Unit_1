@@ -56,8 +56,46 @@ turtle.goto(300,300)
 turtle.pendown()
 
 turtle.left(135)
-for x in range(4):
-    turtle.left(90)
+def makesquare():
+    for x in range(4):
+        turtle.left(90)
+        turtle.forward(100)
+
+for x in range(3):
+    makesquare()
+    turtle.left(20)
+
+turtle.penup()
+turtle.goto(-300,-300)
+turtle.pendown()
+
+def makehouse():
+    turtle.color('red')
+    turtle.begin_fill()
+    makesquare()
+    turtle.end_fill()
+    turtle.color('blue')
+    turtle.begin_fill()
+    turtle.right(120)
     turtle.forward(100)
+    turtle.right(120)
+    turtle.forward(100)
+    turtle.right(120)
+    turtle.forward(100)
+    turtle.end_fill()
+
+turtle.penup()
+turtle.goto(600,-300)
+turtle.pendown()
+
+turtle.seth(0)
+
+for x in range(4):
+    makehouse()
+    turtle.penup()
+    turtle.left(50)
+    turtle.forward(300)
+    turtle.pendown()
+
 
 turtle.exitonclick()
